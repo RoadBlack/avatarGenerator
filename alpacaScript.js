@@ -69,7 +69,6 @@ const listOfOptions = [chooseEars  , chooseHair ,
 // stworzyć funkcje do której przekazujemy argument jaki przycisk został wciśnięty
 //APP logic
 function chooseFunction(option) {
-   setToDefault('chooseButtons' , 'btn');
     switch (option) {
          case "hair":
             document.getElementById('hairBtn').classList.add("active");
@@ -121,6 +120,7 @@ function hideOtherOpttions(choosenOption){
 //changing the beauty of alpaca lol
 function changeHair(typeOfHair){
    document.getElementById("hair").src = "alpaca/hair/" + typeOfHair;
+   document.getElementById(typeOfHair.replace('.png' , '')).focus;
 }
 function changeEyes(typeOfEyes){
    document.getElementById("eyes").src ="alpaca/eyes/"+ typeOfEyes;
@@ -172,16 +172,23 @@ function download(){
       anchor.remove();
    });
 }
-function setToDefault(className , classElements){
-   let element = document.getElementById("chooseButtons");
-   if(element !== null){
-   let elements = element.getElementsByClassName("btn");
-   }else{
-      console.log("XD");
-   }
-   // for(let i = 0 ; i < elements.length ; i++ ){
-   //    elements[i].classList.remove("active");
-   // }
-   console.log(element);
-   console.log(elements);
-}
+
+
+// function setToDefault(nameOfDiv){
+//    let btns = document.querySelectorAll('.chooseHair')
+//    for(let i = 0; i < btns.length; i++){
+//       if(btns[i].classList.contains('selected')) btns[i].classList.remove('selected');
+//     }
+//    btn.classList.add('selected');
+   
+// }
+// //function setToDefault(list){
+//   // let newArray =[];
+//    //for(let i = 0 ; i < list.length ; i++){
+//     //  newArray.push(list[i].replace(".png" , '').document.getElementById[i]);
+//    //    for(let j = 0 ; j < newArray.length ; j++){
+//    //       console.log(document.getElementById[newArray[j]].classList.remove('active'));
+//      //  }
+//    // }
+//    //console.log(newArray);
+// //}

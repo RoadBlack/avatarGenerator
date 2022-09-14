@@ -12,6 +12,10 @@ body{
 .chooseEars{
     display:none;
 }
+.container input{
+    display: none;
+
+}
 .chooseEyes{
     display:none;
 }
@@ -99,13 +103,14 @@ body{
 }
 .btn{
     background-color: transparent;
-    border:0.1rem solid lightskyblue;
+    border:0.1rem solid darkblue;
     border-radius: 6rem;
-    margin: 2.4px;
+    margin: 5px;
     font-size: 2.4rem;
-    color: lightskyblue;
+    color: darkblue;
     padding: 15px;
     height: auto;
+    opacity: 40%;
 }
 
 .chooseButtons{
@@ -128,20 +133,11 @@ body{
 .btn:hover{
     cursor: pointer;
 }
-.btn:focus{
-    background-color: lightskyblue;
+.btn:checked+label{
+    background-color: darkblue;
     opacity: 100%;
     color: white;
 }   
-.active{
-    background-color: lightskyblue;
-    color: white;
-}
-.activated{
-    background-color: lightskyblue;
-    opacity: 100%;
-    color: white;
-}
 .btnWide{
     width: 10rem;
 }
