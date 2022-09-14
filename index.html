@@ -20,11 +20,11 @@
                     <div class="alpaca">
                         <img src=""  class="neck alpacaStuff" id="neck" srcset="">
                         <img src="alpaca/accessories/headphone.png" id="accesories" class="accesories  alpacaStuff" alt="" srcset="">
-                        <img src="alpaca/eyes/default.png"   id="eyes" class="eyes alpacaStuff" alt="" srcset="">
-                        <img src="alpaca/ears/default.png"  id="ears"  class="ears alpacaStuff" alt="" srcset="">
-                        <img src="alpaca/leg/default.png" class="leg alpacaStuff" id="leg" alt="" srcset="">
+                        <img src="alpaca/eyes/defaultEye.png"   id="eyes" class="eyes alpacaStuff" alt="" srcset="">
+                        <img src="alpaca/ears/defaultEar.png"  id="ears"  class="ears alpacaStuff" alt="" srcset="">
+                        <img src="alpaca/leg/defaultLeg.png" class="leg alpacaStuff" id="leg" alt="" srcset="">
                         <img src="alpaca/nose.png"  id="nose" class="nose alpacaStuff" alt="" srcset="">
-                        <img src="alpaca/mouth/default.png" id="mouth" class="mouth alpacaStuff" alt="" srcset="">
+                        <img src="alpaca/mouth/defaultMouth.png" id="mouth" class="mouth alpacaStuff" alt="" srcset="">
                         <img src="alpaca/hair/default.png" id="hair" class="hair alpacaStuff" alt="">
                     </div>
                 </div>
@@ -61,90 +61,90 @@
             </div>
             <div class="chooseHair chooseButtons" id="chooseHair">
                 <input  name="hair"  id="default" type="radio" class="btn" checked onclick="changeHair('default.png')"></input>
-                <label name="hair" class="btn" for="default" checked>Default</label>
+                <label name="hair" class="btn btnWide" for="default" checked>Default</label>
 
                 <input name="hair" type="radio" id="curls"  class="btn" onclick="changeHair('curls.png')" ></input>
                 <label name="hair" class="btn btnWide" for="curls">Curls</label>
 
                 <input name="hair" type="radio" id="short" class="btn"  onclick="changeHair('short.png')"></input>
-                <label name="hair" class="btn" for="short">Short</label>
+                <label name="hair" class="btn btnWide" for="short">Short</label>
 
                 <input  name="hair" type="radio"  id="bang" class="btn" onclick="changeHair('bang.png')"></input>
-                <label name="hair" class="btn" for="bang">Bang</label>
+                <label name="hair" class="btn btnWide" for="bang">Bang</label>
 
                 <input  name="hair" type="radio"  id="elegant" class="btn"  onclick="changeHair('elegant.png')"></input>
-                <label name="hair" class="btn" for="elegant">Elegant</label>
+                <label name="hair" class="btn btnWide" for="elegant">Elegant</label>
 
                 <input  name="hair" type="radio"  id="quiff"  class="btn"  onclick="changeHair('quiff.png')" ></input>
-                <label name="hair" class="btn" for="quiff">Quiff</label>
+                <label name="hair" class="btn btnWide" for="quiff">Quiff</label>
              </div>
              <div class="chooseEars chooseButtons" id="chooseEars">
-                <input name="ears" type="radio"  id="defaultEars active" checked class="btn active"  onclick="changeEars('default.png')"></input>
-                <label name="ears" class="btn" for="defaultEars">Default</label>
-                <input name="ears" type="radio"  id="tiltBackward"  class="btn" onclick="changeEars('tilt-backward.png')"></input>
-                <label name="ears" class="btn" for="tiltBackward">Tilt Backward</label>
-                <input name="ears" type="radio" id="tiltForward" class="btn" onclick="changeEars('tilt-forward.png')"></input>
-                <label name="ears" class="btn" for="tiltForward">Tilt Forward</label>
+                <input name="ears" type="radio"  id="defaultEar" checked class="btn active"  onclick="changeEars('defaultEar.png')"></input>
+                <label name="ears" class="btn btnWide" for="defaultEar">Default</label>
+                <input name="ears" type="radio"  id="tilt-backward"  class="btn" onclick="changeEars('tilt-backward.png')"></input>
+                <label name="ears" class="btn" for="tilt-backward">Tilt Backward</label>
+                <input name="ears" type="radio" id="tilt-forward" class="btn" onclick="changeEars('tilt-forward.png')"></input>
+                <label name="ears" class="btn" for="tilt-forward">Tilt Forward</label>
              </div>
              <div class="chooseEyes chooseButtons" id="chooseEyes">
                 <input name="eyes" type="radio"  id="angry" class="btn" onclick="changeEyes('angry.png')"></input>
-                <label name="eyes" class="btn" for="angry">Angry</label>
-                <input name="eyes" type="radio"  id="defaultEye" checked class="btn active" onclick="changeEyes('default.png')"></input>
-                <label name="eyes" class="btn" for="defaultEye">Default</label>
+                <label name="eyes" class="btn btnWide" for="angry">Angry</label>
+                <input name="eyes" type="radio"  id="defaultEye" checked class="btn active" onclick="changeEyes('defaultEye.png')"></input>
+                <label name="eyes" class="btn btnWide" for="defaultEye">Default</label>
                 <input name="eyes" type="radio"  id="naughty" class="btn" onclick="changeEyes('naughty.png')" ></input>
                 <label name="eyes" class="btn" for="naughty">Naughty</label>
                 <input name="eyes" type="radio"  id="panda" class="btn" onclick="changeEyes('panda.png')" ></input>
-                <label name="eyes" class="btn" for="panda">Panda</label>
+                <label name="eyes" class="btn btnWide" for="panda">Panda</label>
                 <input name="eyes" type="radio"  id="smart" class="btn" onclick="changeEyes('smart.png')"onclick="changeEyes('angry.png')"></input>
-                <label name="eyes" class="btn" for="smart">Smart</label>
+                <label name="eyes" class="btn btnWide" for="smart">Smart</label>
                 <input name="eyes" type="radio"  id="star" class="btn" onclick="changeEyes('star.png')"></input>
-                <label name="eyes" class="btn" for="star">Star</label>
+                <label name="eyes" class="btn btnWide" for="star">Star</label>
              </div>
              <div class="chooseLeg chooseButtons" id="chooseLeg">
-                <input name="leg" type="radio"  id="bubbleTea" class="btn" onclick="changeLeg('bubble-tea.png')"></input>
-                <label name="leg" class="btn" for="bubbleTea">Bubble Tea</label>
+                <input name="leg" type="radio"  id="bubble-tea" class="btn" onclick="changeLeg('bubble-tea.png')"></input>
+                <label name="leg" class="btn" for="bubble-tea">Bubble Tea</label>
                 <input name="leg" type="radio"  id="cookie" class="btn" onclick="changeLeg('cookie.png')"></input>
-                <label name="leg" class="btn" for="cookie">Cookie</label>
-                <input name="leg" type="radio"  id="default active" checked class="btn active" onclick="changeLeg('default.png')"></input>
-                <label name="leg" class="btn" for="default">Default</label>
-                <input name="leg" type="radio"  id="gameConsole"  class="btn" onclick="changeLeg('game-console.png')"> </input>
-                <label name="leg" class="btn" for="gameConsole">Game Console</label>
-                <input name="leg" type="radio"  id="tiltBackwardLeg" class="btn" onclick="changeLeg('tilt-backward.png')"> </input>
-                <label name="leg" class="btn" for="tiltBackwardLeg">Tilt Backward</label>
-                <input name="leg" type="radio"  id="tiltForwardLeg" class="btn" onclick="changeLeg('tilt-forward.png')"> </input>
-                <label name="leg" class="btn" for="tiltForwardLeg">Tilt Forward</label>
+                <label name="leg" class="btn btnWide" for="cookie">Cookie</label>
+                <input name="leg" type="radio"  id="defaultLeg" checked class="btn active" onclick="changeLeg('defaultLeg.png')"></input>
+                <label name="leg" class="btn btnWide" for="defaultLeg">Default</label>
+                <input name="leg" type="radio"  id="game-console"  class="btn" onclick="changeLeg('game-console.png')"> </input>
+                <label name="leg" class="btn" for="game-console">Game Console</label>
+                <input name="leg" type="radio"  id="tilt-backwardLeg" class="btn" onclick="changeLeg('tilt-backwardLeg.png')"> </input>
+                <label name="leg" class="btn " for="tilt-backwardLeg">Tilt Backward</label>
+                <input name="leg" type="radio"  id="tilt-forwardLeg" class="btn" onclick="changeLeg('tilt-forwardLeg.png')"> </input>
+                <label name="leg" class="btn" for="tilt-forwardLeg">Tilt Forward</label>
              </div>
              <div class="chooseMouth chooseButtons" id="chooseMouth">
                 <input name="mouth" type="radio"  id="astonished" class="btn" onclick="changeMouth('astonished.png')"></input>
-                <label name="mouth" class="btn" for="astonished">Astonished</label>
-                <input name="mouth" type="radio"  id="defaultMouth" checked class="btn active" onclick="changeMouth('default.png')"></input>
-                <label name="mouth" class="btn" for="defaultMouth">Default</label>
+                <label name="mouth" class="btn btnWide" for="astonished">Astonished</label>
+                <input name="mouth" type="radio"  id="defaultMouth" checked class="btn active" onclick="changeMouth('defaultMouth.png')"></input>
+                <label name="mouth" class="btn btnWide"   for="defaultMouth">Default</label>
                 <input name="mouth" type="radio"  id="eating" class="btn" onclick="changeMouth('eating.png')"></input>
-                <label name="mouth" class="btn" for="Eating">Eating</label>
+                <label name="mouth" class="btn btnWide" for="Eating">Eating</label>
                 <input name="mouth" type="radio"  id="laugh" class="btn" onclick="changeMouth('laugh.png')"></input>
-                <label name="mouth" class="btn" for="laugh">Laugh</label>
+                <label name="mouth" class="btn btnWide" for="laugh">Laugh</label>
                 <input name="mouth" type="radio"  id="tongue" class="btn" onclick="changeMouth('tongue.png')"></input>
-                <label name="mouth" class="btn" for="tongue">Tongue</label>
+                <label name="mouth" class="btn btnWide" for="tongue">Tongue</label>
              </div>
              <div class="chooseNeck chooseButtons " id="chooseNeck">
-                <input name="neck" type="radio"  id="bendBackward" class="btn" onclick="changeNeck('bend-backward.png')"></input>
-                <label name="neck" class="btn" for="bendBackward">Bend Backward</label>
-                <input name="neck" type="radio"  id="defaultNeck" checked class="btn active" onclick="changeNeck('default.png')"></input>
-                <label name="neck" class="btn" for="defaultNecks">Default</label>
-                <input name="neck" type="radio"  id="bendForward" class="btn" onclick="changeNeck('bend-forward.png')"></input>
-                <label name="neck" class="btn" for="bendForward">Bend Forward</label>
+                <input name="neck" type="radio"  id="bend-backward" class="btn" onclick="changeNeck('bend-backward.png')"></input>
+                <label name="neck" class="btn" for="bend-backward">Bend Backward</label>
+                <input name="neck" type="radio"  id="defaultNeck" checked class="btn active" onclick="changeNeck('defaultNeck.png')"></input>
+                <label name="neck" class="btn btnWide" for="defaultNecks">Default</label>
+                <input name="neck" type="radio"  id="bend-forward" class="btn" onclick="changeNeck('bend-forward.png')"></input>
+                <label name="neck" class="btn" for="bend-forward">Bend Forward</label>
                 <input name="neck" type="radio"  id="thick" class="btn" onclick="changeNeck('thick.png')"></input>
-                <label name="neck" class="btn" for="thick">Thick</label>
+                <label name="neck" class="btn btnWide" for="thick">Thick</label>
              </div>
              <div class="chooseAccesories chooseButtons" id="chooseAccesories">
                 <input name="acc" type="radio" id="earings" class="btn" onclick="changeAccessories('earings.png')"></input>
-                <label name="acc" class="btn" for="earings">Earings</label>
+                <label name="acc" class="btn btnWide" for="earings">Earings</label>
                 <input name="acc" type="radio" id="flower" class="btn" onclick="changeAccessories('flower.png')"></input>
-                <label name="acc" class="btn" for="flower">Flower</label>
+                <label name="acc" class="btn btnWide" for="flower">Flower</label>
                 <input name="acc" type="radio" id="glasses" class="btn" onclick="changeAccessories('glasses.png')"></input>
-                <label name="acc" class="btn" for="glasses">Glasses</label>
+                <label name="acc" class="btn btnWide" for="glasses">Glasses</label>
                 <input name="acc" type="radio" id="headphone" class="btn active" checked onclick="changeAccessories('headphone.png')"></input>
-                <label name="acc" class="btn" for="headphone">Headphone</label>
+                <label name="acc" class="btn btnWide" for="headphone">Headphone</label>
              </div>
              <div class="chooseBackground" id="chooseBackground">
                 <img src="alpaca/backgrounds/blue50.png"  onclick="changeBackground('blue50.png')"class="square" alt="" id="blue50">

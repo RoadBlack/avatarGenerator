@@ -1,4 +1,6 @@
+window.onload = function(){
 
+}
 //list of usable variables
 let chooseEyes = document.getElementById("chooseEyes");
 let chooseHair = document.getElementById("chooseHair");
@@ -6,13 +8,12 @@ let chooseEars = document.getElementById("chooseEars");
 let chooseMouth = document.getElementById("chooseMouth");
 let chooseLeg = document.getElementById("chooseLeg");
 let chooseNeck = document.getElementById("chooseNeck");
-document.getElementById("neck").src = "/alpaca/neck/default.png";
+document.getElementById("neck").src = "/alpaca/neck/defaultNeck.png";
 //hair
 let curls = "curls.png";
 let bang= "bang.png";
 let defaultHair ="default.png";
 let elegant = "elegant.png";
-let fancy = "fancy.png";
 let quiff = "quiff.png";
 let short = "short.png";
 //accesories
@@ -21,12 +22,12 @@ let flower = "flower.png";
 let glasses = "glasses.png"
 let headphone = "headphone.png"
 //ears
-let defaultEar = "default.png";
+let defaultEar = "defaultEar.png";
 let tiltBackward = "tilt-backward.png";
 let tiltForward = "tilt-forward.png";
 //eyes
 let angry = "angry.png";
-let defaultEyes = "default.png";
+let defaultEyes = "defaultEye.png";
 let naughty = "naughty.png";
 let panda = "panda.png";
 let smart = "smart.png";
@@ -34,24 +35,24 @@ let star = "star.png";
 //leg
 let bubbleTea = "bubble-tea.png";
 let cookie = "cookie.png";
-let defaultLeg = "default.png";
+let defaultLeg = "defaultLeg.png";
 let gameConsole = "game-console.png";
-let tiltBackwardLeg = "tilt-backward.png";
-let tiltForwardLeg = "tilt-forward.png";
+let tiltBackwardLeg = "tilt-backwardLeg.png";
+let tiltForwardLeg = "tilt-forwardLeg.png";
 //mouth 
 let astonished = "astonished.png";
-let defaultMouth = "default.png";
+let defaultMouth = "defaultMouth.png";
 let eating = "eating.png";
 let laugh = "laugh.png";
 let tongue = "tongue.png";
 //neck
 let bendBackward = "bend-backward.png";
 let bendForward = "bend-forward.png";
-let defaultNeck = "default.png";
+let defaultNeck = "defaultNeck.png";
 let thick = "thick.png";
 
 // lists 
-const listOfHair = [curls, bang , defaultHair , elegant , fancy ,quiff , short];
+const listOfHair = [curls, bang , defaultHair , elegant , quiff , short];
 const listOfAccesories = [earings , flower , glasses , headphone];
 const listOfEars = [defaultEar , tiltBackward , tiltForward];
 const listOfEyes = [angry , defaultEyes , naughty , panda ,smart ,star];
@@ -152,14 +153,31 @@ function random() {
    let randLeg= Math.floor(Math.random() * listOfLeg.length);
    let randMouth= Math.floor(Math.random() * listOfMouth.length);
    let randNeck= Math.floor(Math.random() * listOfNeck.length);
+
+   document.getElementById('hair').setAttribute('src' ,"alpaca/hair/"+listOfHair[randHair]);
+   document.getElementById(listOfHair[randHair].replace('.png' , "")).checked = true;
    
-   document.getElementById('hair').src="alpaca/hair/"+listOfHair[randHair];
    document.getElementById('accesories').src="alpaca/accessories/"+listOfAccesories[randAccessorie];
+   document.getElementById(listOfAccesories[randAccessorie].replace('.png' , "")).checked = true;
+
    document.getElementById('ears').src="alpaca/ears/"+listOfEars[randEar];
+  
+   document.getElementById(listOfEars[randEar].replace('.png' , "")).checked = true;
+
    document.getElementById('eyes').src="alpaca/eyes/"+listOfEyes[randEyes];
+   document.getElementById(listOfEyes[randEyes].replace('.png' , "")).checked = true;
+
    document.getElementById('leg').src="alpaca/leg/"+listOfLeg[randLeg];
+
+   document.getElementById(listOfLeg[randLeg].replace('.png' , "")).checked = true;
+
    document.getElementById('mouth').src="alpaca/mouth/"+listOfMouth[randMouth];
+   
+   document.getElementById(listOfMouth[randMouth].replace('.png' , "")).checked = true;
+
    document.getElementById('neck').src="alpaca/neck/"+listOfNeck[randNeck];
+   console.log(listOfNeck[randNeck]);
+   document.getElementById(listOfNeck[randNeck].replace('.png' , "")).checked = true;
 }
 //download function
 function download(){
