@@ -1,0 +1,174 @@
+body{
+    background-color: #dcd3b6;
+}
+.container{
+    align-items: center;
+    text-align: center;
+}
+.chooseHair{
+    display:none;
+}
+
+.chooseEars{
+    display:none;
+}
+.chooseEyes{
+    display:none;
+}
+.chooseLeg{
+    display:none;
+}
+.chooseMouth{
+    display:none;
+}
+.chooseNeck{
+    display:none;
+}
+.chooseAccesories{
+    display: none;
+}
+.chooseBackground{
+    display: none;
+}
+.generatorContainer{
+    display: flex;
+    flex-direction: row;
+}
+.buttonText{
+    font-size: 30px;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+}
+.curvedContainer{
+    background-image: url("alpaca/backgrounds/blue50.png");
+}
+
+.neck{
+ 
+    position: relative;
+}
+.eyes{
+    position: absolute;
+    left: 1rem;
+}
+.hair{
+    position: absolute;
+    top: 12.46rem;
+    left: 3.9rem;
+}
+.upperText{
+    text-align: left;
+    font-size: 40px;
+    margin-left: 5%;
+}
+.pictureContainer{
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 0;
+    padding-bottom:8px;
+}
+.alpacaStuff{
+    width: 500px;
+    height: auto;
+}
+.mouth{
+    position: absolute;
+    left: 1rem;
+}
+.nose{
+    position: absolute;
+    left: 2rem;
+}
+.accesories{
+    position: absolute;
+    top: 14.5rem;
+    left: 1rem;
+   
+}
+.leg{
+    position: absolute;
+    top: 12.5rem;
+    left: 2rem;
+}
+.ears{
+    position: absolute;
+    left: 2.3rem;
+    top:11.1rem;
+}
+.btn{
+    background-color: transparent;
+    border:0.1rem solid lightskyblue;
+    border-radius: 6rem;
+    margin: 2.4px;
+    font-size: 2.4rem;
+    color: lightskyblue;
+    padding: 15px;
+    height: auto;
+}
+
+.chooseButtons{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.functionalButtons{
+    flex-direction: row;
+}
+.bigButton{
+    background-color:white;
+    border: transparent;
+    margin: 5px;
+    font-size: 30px;
+    border-radius: 10%;
+    padding: 5%;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn:focus{
+    background-color: lightskyblue;
+    opacity: 100%;
+    color: white;
+}   
+.active{
+    background-color: lightskyblue;
+    color: white;
+}
+.activated{
+    background-color: lightskyblue;
+    opacity: 100%;
+    color: white;
+}
+.btnWide{
+    width: 10rem;
+}
+.chooseBackground{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.square{
+    width: 10%;
+    height: auto;
+    margin: 2px;
+}
+.square:hover{
+    cursor: pointer;
+}
+.sorry{
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    .container{
+      display: none;
+    }
+    .sorry{
+        display: block;
+        color: red;
+    }
+  }

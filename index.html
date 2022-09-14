@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpaca Generator</title>
+    <link rel="stylesheet" href="indexStyles.css">
+</head>
+<body>
+    <h1 class="sorry"> ERROR:   IM SORRY BUT 
+        THIS APPLICATION IS NOT OPTIMIZED FOR MOBILE DEVICES YET, STILL WORKING ON IT</h1>
+    <div class="container">
+        <div class="upperText">
+            <h1>Alpaca Generator</h1>
+        </div>
+        <div class="generatorContainer">
+            <div class="pictureContainer">
+                <div class="curvedContainer" id="curvedContainer">
+                    <div class="alpaca">
+                        <img src=""  class="neck alpacaStuff" id="neck" srcset="">
+                        <img src="alpaca/accessories/headphone.png" id="accesories" class="accesories  alpacaStuff" alt="" srcset="">
+                        <img src="alpaca/eyes/default.png"   id="eyes" class="eyes alpacaStuff" alt="" srcset="">
+                        <img src="alpaca/ears/default.png"  id="ears"  class="ears alpacaStuff" alt="" srcset="">
+                        <img src="alpaca/leg/default.png" class="leg alpacaStuff" id="leg" alt="" srcset="">
+                        <img src="alpaca/nose.png"  id="nose" class="nose alpacaStuff" alt="" srcset="">
+                        <img src="alpaca/mouth/default.png" id="mouth" class="mouth alpacaStuff" alt="" srcset="">
+                        <img src="alpaca/hair/default.png" id="hair" class="hair alpacaStuff" alt="">
+                    </div>
+                </div>
+                <div class="functionalButtons">
+                    <button id="random" class="bigButton" onclick="random()">🎰 random</button>
+                    <button id="download" class="bigButton" onclick="download()">📂 download</button>
+                </div>
+            </div>
+            <div class="buttonContainer">
+                <div class="buttonText">
+                    <h3>ACCESSORIZE FOR ALPACA'S</h3>
+                </div>
+                <div class="chooseButtons">
+                    <button id="hairBtn" class="btn btnWide" onclick="chooseFunction('hair')">hair</button>
+                    <button id="earsBtn" class="btn btnWide" onclick="chooseFunction('ears')">ears</button>
+                    <button id="eyesBtn" class="btn btnWide" onclick="chooseFunction('eyes')">eyes</button>
+                    <button id="mouthBtn" class="btn btnWide" onclick="chooseFunction('mouth')" >mouth</button>
+                    <button id="neckBtn" class="btn btnWide"  onclick="chooseFunction('neck')">neck</button>
+                    <button id="legBtn" class="btn btnWide" onclick="chooseFunction('leg')">leg</button>
+                    <button id="accesoriesBtn"  class="btn" onclick="chooseFunction('accesories')">accessories</button>
+                    <button id="backgroundBtn" class="btn active"  onclick="chooseFunction('background')">background</button>
+                </div>
+            
+            <div class="buttonText">
+                <h3>Style</h3>
+            </div>
+            <div class="chooseHair" id="chooseHair">
+                <button id="default" class="btn" onclick="changeHair('default.png')">default</button>
+                <button id="curls"  class="btn" onclick="changeHair('curls.png')" >curls</button>
+                <button id="short" class="btn"  onclick="changeHair('short.png')">short</button>
+                <button id="bang" class="btn" onclick="changeHair('bang.png')">bang</button>
+                <button id="elegant" class="btn"  onclick="changeHair('elegant.png')">elegant</button>
+                <button id="quiff"  class="btn"  onclick="changeHair('quiff.png')" >quiff</button>
+             </div>
+             <div class="chooseEars" id="chooseEars">
+                <button id="defaultEars" class="btn"  onclick="changeEars('default.png')">default</button>
+                <button id="tiltBackward"  class="btn" onclick="changeEars('tilt-backward.png')">tilt backward</button>
+                <button id="tiltForward" class="btn" onclick="changeEars('tilt-forward.png')">tilt forward</button>
+             </div>
+             <div class="chooseEyes" id="chooseEyes">
+                <button id="angry" class="btn" onclick="changeEyes('angry.png')">angry</button>
+                <button id="default"  class="btn" onclick="changeEyes('default.png')">default</button>
+                <button id="naughty" class="btn" onclick="changeEyes('naughty.png')" >naughty</button>
+                <button id="panda" class="btn" onclick="changeEyes('panda.png')" >panda</button>
+                <button id="smart" class="btn" onclick="changeEyes('smart.png')"onclick="changeEyes('angry.png')">smart</button>
+                <button id="star" class="btn" onclick="changeEyes('star.png')">star</button>
+             </div>
+             <div class="chooseLeg" id="chooseLeg">
+                <button id="bubbleTea" class="btn" onclick="changeLeg('bubble-tea.png')">bubbleTea</button>
+                <button id="cookie" class="btn" onclick="changeLeg('cookie.png')">cookie</button>
+                <button id="default" class="btn" onclick="changeLeg('default.png')">default</button>
+                <button id="gameConsole"  class="btn" onclick="changeLeg('game-console.png')">game console</button>
+                <button id="tiltBackward" class="btn" onclick="changeLeg('tilt-backward.png')">tilt backward</button>
+                <button id="tiltForward" class="btn" onclick="changeLeg('tilt-forward.png')">tilt forward</button>
+             </div>
+             <div class="chooseMouth" id="chooseMouth">
+                <button id="astonished" class="btn" onclick="changeMouth('astonished.png')">astonished</button>
+                <button id="default" class="btn" onclick="changeMouth('default.png')">default</button>
+                <button id="eating" class="btn" onclick="changeMouth('eating.png')">eating</button>
+                <button id="laugh" class="btn" onclick="changeMouth('laugh.png')">laugh</button>
+                <button id="tongue" class="btn" onclick="changeMouth('tongue.png')">tongue</button>
+             </div>
+             <div class="chooseNeck" id="chooseNeck">
+                <button id="bendBackward" class="btn" onclick="changeNeck('bend-backward.png')">bend backward</button>
+                <button id="default" class="btn" onclick="changeNeck('default.png')">default</button>
+                <button id="bendForward" class="btn" onclick="changeNeck('bend-forward.png')">bendForward</button>
+                <button id="thick" class="btn" onclick="changeNeck('thick.png')">thick</button>
+             </div>
+             <div class="chooseAccesories" id="chooseAccesories">
+                <button id="earings" class="btn" onclick="changeAccessories('earings.png')">earings</button>
+                <button id="flower" class="btn" onclick="changeAccessories('flower.png')">flower</button>
+                <button id="glasses" class="btn" onclick="changeAccessories('glasses.png')">glasses</button>
+                <button id="headphone" class="btn" onclick="changeAccessories('headphone.png')">headphone</button>
+             </div>
+             <div class="chooseBackground" id="chooseBackground">
+                <img src="alpaca/backgrounds/blue50.png"  onclick="changeBackground('blue50.png')"class="square" alt="" id="blue50">
+                <img src="alpaca/backgrounds/blue60.png" onclick="changeBackground('blue60.png')" class="square"  alt="" id="blue60">
+                <img src="alpaca/backgrounds/blue70.png"  onclick="changeBackground('blue70.png')"class="square" alt="" id="blue70">
+                <img src="alpaca/backgrounds/darkblue30.png" onclick="changeBackground('darkblue30.png')" class="square" alt="" id="darkblue30">
+                <img src="alpaca/backgrounds/darkblue50.png" onclick="changeBackground('darkblue50.png')"class="square" alt="" id="darkblue50">
+                <img src="alpaca/backgrounds/darkblue70.png" onclick="changeBackground('darkblue70.png')" class="square" alt="" id="darkblue70">
+                <img src="alpaca/backgrounds/green50.png" onclick="changeBackground('green50.png')" class="square" alt="" id="green50">
+                <img src="alpaca/backgrounds/green60.png"  onclick="changeBackground('green60.png')" class="square" alt="" id="green60">
+                <img src="alpaca/backgrounds/green70.png" onclick="changeBackground('green70.png')" class="square"  alt="" id="green70">
+                <img src="alpaca/backgrounds/grey40.png" onclick="changeBackground('grey40.png')" class="square"  alt="" id="grey40">
+                <img src="alpaca/backgrounds/grey70.png"  onclick="changeBackground('grey70.png')" class="square" alt="" id="grey70">
+                <img src="alpaca/backgrounds/grey80.png" onclick="changeBackground('grey80.png')" class="square" alt="" id="grey80">
+                <img src="alpaca/backgrounds/red50.png" onclick="changeBackground('red50.png')" class="square" alt="" id="red50">
+                <img src="alpaca/backgrounds/red60.png" onclick="changeBackground('red60.png')" class="square" alt="" id="red60">
+                <img src="alpaca/backgrounds/red70.png" onclick="changeBackground('red70.png')" class="square" alt="" id="red70">
+                <img src="alpaca/backgrounds/yellow50.png" onclick="changeBackground('yellow50.png')" class="square" alt="" id="yellow50">
+                <img src="alpaca/backgrounds/yellow60.png" onclick="changeBackground('yellow60.png')" class="square"  alt="" id="yellow60">
+                <img src="alpaca/backgrounds/yellow70.png" onclick="changeBackground('yellow70.png')" class="square" alt="" id="yellow70">
+            </div>
+            </div>
+        </div>
+    </div>
+<script src="alpacaScript.js"></script>
+<script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+</body>
+</html>
