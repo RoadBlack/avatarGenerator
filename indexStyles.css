@@ -114,10 +114,10 @@ body{
 }
 
 .chooseButtons{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-evenly;
 }
 .functionalButtons{
     flex-direction: row;

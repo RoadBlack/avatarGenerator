@@ -72,36 +72,36 @@ function chooseFunction(option) {
     switch (option) {
          case "hair":
             document.getElementById('hairBtn').classList.add("active");
-            chooseHair.style.display = "block";
+            chooseHair.style.display = "flex";
             hideOtherOpttions(chooseHair);
             break;   
          case "eyes":
             hideOtherOpttions(chooseEyes);
-            chooseEyes.style.display = "block";
+            chooseEyes.style.display = "flex";
             break;
          case "ears":
             hideOtherOpttions(chooseEars);
-            chooseEars.style.display = "block";
+            chooseEars.style.display = "flex";
             break;   
          case "mouth":
             hideOtherOpttions(chooseMouth);
-           chooseMouth.style.display = "block";
+           chooseMouth.style.display = "flex";
             break; 
          case "leg":
             hideOtherOpttions(chooseLeg);
-            chooseLeg.style.display = "block";
+            chooseLeg.style.display = "flex";
             break; 
          case "accesories":
             hideOtherOpttions(chooseAccesories);
-            chooseAccesories.style.display = "block";
+            chooseAccesories.style.display = "flex";
             break; 
          case "neck":
             hideOtherOpttions(chooseNeck);
-            chooseNeck.style.display = "block";
+            chooseNeck.style.display = "flex";
             break; 
          case "background":
             hideOtherOpttions(chooseBackground);
-            chooseBackground.style.display = "block";
+            chooseBackground.style.display = "flex";
             break; 
         default:
             break;
