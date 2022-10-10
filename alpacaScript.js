@@ -8,7 +8,7 @@ let chooseEars = document.getElementById("chooseEars");
 let chooseMouth = document.getElementById("chooseMouth");
 let chooseLeg = document.getElementById("chooseLeg");
 let chooseNeck = document.getElementById("chooseNeck");
-document.getElementById("neck").src = "/alpaca/neck/defaultNeck.png";
+document.getElementById("neck").src = "alpaca/neck/defaultNeck.png";
 //hair
 let curls = "curls.png";
 let bang= "bang.png";
